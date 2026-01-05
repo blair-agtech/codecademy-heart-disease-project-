@@ -43,7 +43,7 @@ This analysis employs rigorous statistical testing:
 heart-disease-risk-analysis/
 ├── HeartDiseaseResearch_BootCampProject.ipynb  # Main analysis notebook
 ├── heart_disease.csv                            # Patient clinical data
-├── BlairBateman-CodecademyPresentation.pdf      # Project presentation slides
+├── BlairBateman_CodecademyPresentation.pdf      # Project presentation slides
 ├── requirements.txt                             # Python dependencies
 ├── .gitignore                                   # Git ignore rules
 └── README.md                                    # Project documentation (this file)

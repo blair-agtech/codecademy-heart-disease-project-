@@ -26,7 +26,6 @@ This analysis employs rigorous statistical testing:
 - **Two-sample t-tests** for group comparisons
 - **Binomial test** for proportion analysis
 - **Effect size calculations** (Cohen's d)
-- **Assumption checking** (normality, equal variance)
 - **Significance level**: α = 0.05
 
 ## 🛠️ Technologies Used

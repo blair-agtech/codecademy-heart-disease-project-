@@ -1,0 +1,5 @@
+Metric,Patients WITH HD,Patients WITHOUT HD,Mean Difference,Effect Size,p-value
+Maximum Heart Rate,139.26 bpm,158.38 bpm,-19.12 bpm,Large (d = -0.918),< 0.0001***
+Age,56.63 years,52.59 years,+4.04 years,Small (d = 0.458),< 0.0001***
+Resting BP,134.57 mmHg,129.25 mmHg,+5.32 mmHg,Small (d = 0.305),0.0085**
+Cholesterol,251.47 mg/dl,242.64 mg/dl,+8.83 mg/dl,Negligible (d = 0.171),0.1391ns

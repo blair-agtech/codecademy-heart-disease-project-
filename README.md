@@ -82,21 +82,6 @@ pip install pandas numpy matplotlib seaborn scipy statsmodels jupyter
 
 4. **Run all cells sequentially** to reproduce the analysis
 
-## 📈 Key Findings
-
-### Statistical Test Results
-
-| Metric | Group Comparison | P-value | Effect Size (Cohen's d) | Interpretation |
-|--------|-----------------|---------|-------------------------|----------------|
-| **Maximum Heart Rate** | With vs Without HD | 0.0000 | -0.818 | Large effect - patients with heart disease have significantly lower max heart rate |
-| **Age** | With vs Without HD | 0.001 | 0.315 | Small-medium effect - patients with heart disease are slightly older |
-| **Fasting Blood Sugar** | Sample vs 1988 Baseline (8%) | 0.0004 | 14.85% prevalence | Significantly higher than expected |
-
-### Clinical Insights
-- Patients with heart disease demonstrate **significantly reduced maximum heart rate** during exercise (p < 0.0001, large effect size)
-- Age is a **statistically significant but modest** risk factor (p = 0.001, small effect size)  
-- **Fasting blood sugar prevalence** in this clinical sample is nearly **double** the 1988 U.S. baseline (14.85% vs 8%)
-
 ## 📊 Visualizations
 
 The project includes comprehensive data visualizations:

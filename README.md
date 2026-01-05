@@ -1,92 +1,169 @@
-# codecademy-heart-disease-project-
-Statistical analysis of heart disease risk factors using Python - Codecademy Data Science Bootcamp project examining cholesterol, fasting blood sugar, and cardiovascular metrics
-
 # Heart Disease Risk Factors Analysis
 
 **Codecademy Bootcamp - Applied Data Science with Python**
 
 Statistical analysis investigating cardiovascular risk factors using clinical data from the Cleveland Clinic Foundation.
 
+![Heart Disease Risk Factors Poster](Codecademy_Poster.jpg)
+
 ## 🎯 Project Overview
 
-This project examines whether patients diagnosed with heart disease exhibit significantly elevated cholesterol levels and fasting blood sugar compared to clinical thresholds and population baselines.
+This project examines whether patients diagnosed with heart disease exhibit significantly elevated cholesterol levels and fasting blood sugar compared to clinical thresholds and population baselines. The analysis uses hypothesis testing and effect size calculations to draw meaningful clinical insights from the data.
 
 ### Key Research Questions
-1. Do patients with heart disease have mean cholesterol levels significantly higher than 240 mg/dl?
-2. Is the prevalence of elevated fasting blood sugar (>120 mg/dl) in this clinical sample significantly higher than the 1988 U.S. national average of 8%?
-3. How do cardiovascular metrics differ between patients with and without heart disease?
+1. **Cholesterol Analysis**: Do patients with heart disease have mean cholesterol levels significantly higher than 240 mg/dl?
+2. **Fasting Blood Sugar**: Is the prevalence of elevated fasting blood sugar (>120 mg/dl) in this clinical sample significantly higher than the 1988 U.S. national average of 8%?
+3. **Comparative Analysis**: How do cardiovascular metrics differ between patients with and without heart disease?
 
 ## 📊 Dataset Information
 - **Total Patients**: 303
-- **Variables**: 9 clinical measurements
-- **Outcome**: Heart disease presence/absence
+- **Variables**: 9 clinical measurements including age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, maximum heart rate, exercise-induced angina, and ST depression
+- **Outcome**: Heart disease presence/absence (binary classification)
 - **Source**: UCI Machine Learning Repository (Cleveland Clinic Foundation)
 
 ## 🔬 Statistical Methods
-- One-sample t-tests for threshold comparisons
-- Two-sample t-tests for group comparisons
-- Binomial test for proportion analysis
-- Effect size calculations (Cohen's d)
-- Assumption checking (normality, equal variance)
+
+This analysis employs rigorous statistical testing:
+- **One-sample t-tests** for threshold comparisons
+- **Two-sample t-tests** for group comparisons
+- **Binomial test** for proportion analysis
+- **Effect size calculations** (Cohen's d)
+- **Assumption checking** (normality, equal variance)
+- **Significance level**: α = 0.05
 
 ## 🛠️ Technologies Used
 - **Python 3.13**
-- **Libraries**: pandas, numpy, scipy, matplotlib, seaborn, statsmodels
+- **Libraries**: 
+  - pandas (data manipulation)
+  - numpy (numerical computing)
+  - scipy (statistical tests)
+  - matplotlib & seaborn (data visualization)
+  - statsmodels (advanced statistical analysis)
 
 ## 📁 Project Structure
-├── HeartDiseaseResearch_BootCampProject.ipynb # Main analysis notebook
-├── heart_disease.csv # Patient data
-├── SUMMARY_TABLE_EF_AND_SS.csv # Effect size & statistical significance
-├── Codecademy_Poster.jpg # Results visualization
-├── BlairBateman-CodecademyPresentation.pdf # Project presentation
-└── README.md # Project documentation
-
+```
+heart-disease-risk-analysis/
+├── HeartDiseaseResearch_BootCampProject.ipynb  # Main analysis notebook
+├── heart_disease.csv                            # Patient clinical data
+├── BlairBateman-CodecademyPresentation.pdf      # Project presentation slides
+├── requirements.txt                             # Python dependencies
+├── .gitignore                                   # Git ignore rules
+└── README.md                                    # Project documentation (this file)
+```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+Ensure you have Python 3.8+ installed. Then install required packages:
+
 ```bash
-pip install pandas numpy matplotlib seaborn scipy statsmodels
+pip install -r requirements.txt
+```
 
-Running the Analysis
-Clone this repository
+Or install packages individually:
+```bash
+pip install pandas numpy matplotlib seaborn scipy statsmodels jupyter
+```
 
-Ensure all CSV files are in the same directory as the notebook
+### Running the Analysis
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/yourusername/heart-disease-risk-analysis.git
+   cd heart-disease-risk-analysis
+   ```
 
-Open HeartDiseaseResearch_BootCampProject.ipynb in Jupyter
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Run all cells sequentially
+3. **Launch Jupyter Notebook**
+   ```bash
+   jupyter notebook HeartDiseaseResearch_BootCampProject.ipynb
+   ```
 
-📈 Key Findings
-Results from statistical testing:
+4. **Run all cells sequentially** to reproduce the analysis
 
-Maximum heart rate analysis (p < 0.0001, large effect size)
+## 📈 Key Findings
 
-Age comparison between groups (p = 0.001, small effect size)
+### Statistical Test Results
 
-Fasting blood sugar prevalence significantly higher than baseline (p = 0.0004)
+| Metric | Group Comparison | P-value | Effect Size (Cohen's d) | Interpretation |
+|--------|-----------------|---------|-------------------------|----------------|
+| **Maximum Heart Rate** | With vs Without HD | 0.0000 | -0.818 | Large effect - patients with heart disease have significantly lower max heart rate |
+| **Age** | With vs Without HD | 0.001 | 0.315 | Small-medium effect - patients with heart disease are slightly older |
+| **Fasting Blood Sugar** | Sample vs 1988 Baseline (8%) | 0.0004 | 14.85% prevalence | Significantly higher than expected |
 
-👤 Author
-Blair Bateman
+### Clinical Insights
+- Patients with heart disease demonstrate **significantly reduced maximum heart rate** during exercise (p < 0.0001, large effect size)
+- Age is a **statistically significant but modest** risk factor (p = 0.001, small effect size)  
+- **Fasting blood sugar prevalence** in this clinical sample is nearly **double** the 1988 U.S. baseline (14.85% vs 8%)
 
-GitHub: [@YourGitHubUsername]
+## 📊 Visualizations
 
-LinkedIn: [linkedin.com/in/blairbateman]
+The project includes comprehensive data visualizations:
+- Distribution plots comparing groups
+- Statistical test result summaries
+- Effect size interpretations
+- Clinical significance assessments
 
-Project: Codecademy Applied Data Science with Python Bootcamp
+## 🎓 Learning Outcomes
 
-📄 License
-This project is licensed under the MIT License.
+This project demonstrates proficiency in:
+- **Statistical hypothesis testing** (t-tests, binomial tests)
+- **Effect size calculation and interpretation**
+- **Data cleaning and exploratory data analysis**
+- **Python data science ecosystem** (pandas, scipy, matplotlib)
+- **Scientific communication** and documentation
+- **Reproducible research practices**
 
-🙏 Acknowledgments
-Data collection credited to:
+## 👤 Author
 
-Hungarian Institute of Cardiology, Budapest: Andras Janosi, M.D.
+**Blair Bateman**
+- **Location**: Olds, Alberta, Canada
+- **Role**: Agricultural Researcher & Data Analyst
+- **GitHub**: [@blair-agtech](https://github.com/blair-agtech)
+- **LinkedIn**: [linkedin.com/in/blairbateman](https://linkedin.com/in/blairbateman)
+- **Project**: Codecademy Applied Data Science with Python Bootcamp - January 2026
 
-University Hospital, Zurich: William Steinbrunn, M.D.
+## 📄 License
 
-University Hospital, Basel: Matthias Pfisterer, M.D.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-V.A. Medical Center, Long Beach & Cleveland Clinic: Robert Detrano, M.D., Ph.D.
+## 🙏 Acknowledgments
 
+### Data Collection Credits
+Special thanks to the principal investigators responsible for data collection:
+- **Hungarian Institute of Cardiology**, Budapest: Andras Janosi, M.D.
+- **University Hospital**, Zurich, Switzerland: William Steinbrunn, M.D.
+- **University Hospital**, Basel, Switzerland: Matthias Pfisterer, M.D.
+- **V.A. Medical Center**, Long Beach and **Cleveland Clinic Foundation**: Robert Detrano, M.D., Ph.D.
+
+### Data Source
+Dataset obtained from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Heart+Disease)
+
+### Educational Program
+Completed as part of Codecademy's **Applied Data Science with Python Bootcamp**
+
+## 📚 References
+
+1. UCI Machine Learning Repository - Heart Disease Dataset
+2. Cleveland Clinic Foundation Clinical Database
+3. Cohen's d Effect Size Guidelines (Cohen, 1988)
+4. Statistical Methods in Medical Research
+
+## 🔄 Future Improvements
+
+Potential extensions of this analysis:
+- Machine learning classification models (logistic regression, random forest)
+- Feature importance analysis
+- ROC curve analysis for predictive modeling
+- Incorporation of additional cardiovascular risk factors
+- Time-series analysis if longitudinal data becomes available
+
+---
+
+**Note**: This is an educational project completed as part of a data science bootcamp. Results are for demonstration purposes and should not be used for medical decision-making.
+
+*Last Updated: January 2026*
 

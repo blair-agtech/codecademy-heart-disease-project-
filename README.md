@@ -147,17 +147,14 @@ Completed as part of Codecademy's **Applied Data Science with Python Bootcamp**
 
 1. UCI Machine Learning Repository - Heart Disease Dataset
 2. Cleveland Clinic Foundation Clinical Database
-3. Cohen's d Effect Size Guidelines (Cohen, 1988)
-4. Statistical Methods in Medical Research
+3. Codecademy
 
 ## 🔄 Future Improvements
 
 Potential extensions of this analysis:
 - Machine learning classification models (logistic regression, random forest)
 - Feature importance analysis
-- ROC curve analysis for predictive modeling
-- Incorporation of additional cardiovascular risk factors
-- Time-series analysis if longitudinal data becomes available
+
 
 ---
 

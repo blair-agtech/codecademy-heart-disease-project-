@@ -37,48 +37,6 @@ This analysis employs rigorous statistical testing:
   - matplotlib & seaborn (data visualization)
   - statsmodels (advanced statistical analysis)
 
-## 📁 Project Structure
-```
-heart-disease-risk-analysis/
-├── HeartDiseaseResearch_BootCampProject.ipynb  # Main analysis notebook
-├── heart_disease.csv                            # Patient clinical data
-├── BlairBateman_CodecademyPresentation.pdf      # Project presentation slides
-├── requirements.txt                             # Python dependencies
-├── .gitignore                                   # Git ignore rules
-└── README.md                                    # Project documentation (this file)
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-Ensure you have Python 3.8+ installed. Then install required packages:
-
-```bash
-pip install -r requirements.txt
-```
-
-Or install packages individually:
-```bash
-pip install pandas numpy matplotlib seaborn scipy statsmodels jupyter
-```
-
-### Running the Analysis
-1. **Clone this repository**
-   ```bash
-   git clone https://github.com/yourusername/heart-disease-risk-analysis.git
-   cd heart-disease-risk-analysis
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Launch Jupyter Notebook**
-   ```bash
-   jupyter notebook HeartDiseaseResearch_BootCampProject.ipynb
-   ```
-
 4. **Run all cells sequentially** to reproduce the analysis
 
 ## 📊 Visualizations

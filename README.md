@@ -61,9 +61,6 @@ This project demonstrates proficiency in:
 
 **Blair Bateman**
 - **Location**: Olds, Alberta, Canada
-- **Role**: Agricultural Researcher & Data Analyst
-- **GitHub**: [@blair-agtech](https://github.com/blair-agtech)
-- **LinkedIn**: [linkedin.com/in/blairbateman](https://linkedin.com/in/blairbateman)
 - **Project**: Codecademy Applied Data Science with Python Bootcamp - January 2026
 
 ## 📄 License
